@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Parent from './Parent';
 import CounterContext from './CounterContext';
 import './App.css';
 
 function App() {
 
-  let countState = useState(1); // [count, state]
+  let countState = React.useState(1); // [count, state]
 
   return (
     <CounterContext.Provider value={countState}>
