@@ -1,8 +1,8 @@
-import React, { useReducer } from 'react';
+import React from 'react';
 import CounterReducer from './CounterReducer';
 
 const ChildForReducer = () => {
-    const reducerValue = useReducer(CounterReducer, 1);
+    const reducerValue = React.useReducer(CounterReducer, 1);
 
     return (
         <div className="reducer">
